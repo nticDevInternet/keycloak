@@ -349,6 +349,10 @@ declare class Keycloak {
 	 */
 	constructor(config?: KeycloakConfig | string)
 
+	code?: string;
+	
+    nonce?: string;
+
 	/**
 	 * Is true if the user is authenticated, false otherwise.
 	 */
