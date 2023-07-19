@@ -1,6 +1,6 @@
 {
-  "name": "keycloak-js",
-  "version": "999.0.0-SNAPSHOT",
+  "name": "@nticdev/keycloak-js",
+  "version": "999.0.3-SNAPSHOT",
   "description": "A client-side JavaScript OpenID Connect library that can be used to secure web applications",
   "main": "./dist/keycloak.js",
   "module": "./dist/keycloak.mjs",
@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "build": "wireit",
-    "prepublishOnly": "pnpm run build"
+    "prepublishOnly": "npm run build"
   },
   "wireit": {
     "build": {
@@ -29,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/keycloak/keycloak"
+    "url": "https://github.com/nticDevInternet/keycloak/tree/keycloak-js-modif"
   },
   "author": "Keycloak",
   "license": "Apache-2.0",
@@ -48,7 +48,9 @@
     "@rollup/plugin-terser": "^0.4.3",
     "@rollup/plugin-typescript": "^11.1.2",
     "es6-promise": "^4.2.8",
-    "rollup": "^3.26.3"
+    "rollup": "^3.26.3",
+    "tslib": "^2.6.0",
+    "wireit": "^0.10.0"
   },
   "dependencies": {
     "base64-js": "^1.5.1",
